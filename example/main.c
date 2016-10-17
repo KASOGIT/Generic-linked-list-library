@@ -5,7 +5,7 @@
 ** Login   <@epitech.net>
 ** 
 ** Started on  Sat May 28 00:59:06 2016 
-** Last update Sat May 28 10:14:38 2016 
+** Last update Mon Oct 17 03:36:52 2016 
 */
 
 #include <stdio.h>
@@ -48,4 +48,6 @@ int	main()
   printf("elem: %d\n", *((int *)elem));
   
   list_destroy(list);
+
+  return (0);
 }
