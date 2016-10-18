@@ -5,7 +5,7 @@
 ## Login   <@epitech.net>
 ## 
 ## Started on  Mon Oct 17 10:57:22 2016 
-## Last update Mon Oct 17 11:05:55 2016 
+## Last update Tue Oct 18 14:48:06 2016 
 ##
 
 NAME	= test
@@ -18,12 +18,12 @@ SRC	= main.c \
 
 OBJ	= $(SRC:.c=.o)
 
-CFLAGS	= -O2 -pipe -I./../include/
+CFLAGS	= -O2 -pipe -I../include/
 
-LDFLAGS	= -L./../liblist.a
+LDFLAGS	= -static -L../ -llist
 
 $(NAME): $(OBJ)
-	 $(CC) -o $(NAME) $(LDFLAGS) $(OBJ)
+	 $(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
 
 all: $(NAME)
 
